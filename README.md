@@ -28,9 +28,9 @@ ContactEmailAddress: please enter email address for users to contact you with qu
 
 ---
 
-#${projectTitle}
+# ${projectTitle}
 
-##Description
+## Description
 ${projectDescription}
 [project link](https://bookdown.org/yihui/rmarkdown-cookbook/attr-output.html)
 
