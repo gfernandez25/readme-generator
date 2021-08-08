@@ -1,43 +1,58 @@
-projectTitle: Please enter title of the project
+projectTitle: 
+What's the project name?
 
-projectDescription: Please enter a project description projectLink: Please enter a link for the deployed project
+projectDescription: 
+Whats the project about?
 
-tableOfContents: (will be auto generated from sections, just for navigation)
+projectLink: 
+What is the link for the project?
 
 Provide a step-by-step description of how to get the development environment running
 
-installationSteps: Please provide installation step.
+installationSteps[]: 
+What is the description for step ${stepNumber}?
+additionalSteps: 
+Do you have more installation steps?
 
-moreInstallationSteps: Do you have more installation steps?
+usageInstructions: 
+Can you provide instructions and examples for use?
 
-usageInstructions: Provide instructions and examples for use. Include screenshots as needed.
+license[]: 
+What licenses are you using for your project? (Select any that apply) 
 
-license: choose a license for the application from the list of options below
+contributing: 
+Could you add guidelines on how to contribute to your project?
 
-contributing: add guidelines for how to contribute
+tests: 
+Could you add guidelines on how to test your project?
 
-tests: please list tests for your application. Then provide examples on how to run them
 
-questions: please provide a way for users to contact you with questions about your application
+In order for users to contact you with questions about your application we are going to need some information.
 
-ContactGithubUsername: please enter Github Username ContactGithubLink: please enter github link ContactEmailAddress:
-please enter email address for users to contact you with questions
+ContactGithubUsername: 
+What is your Github Username?
+
+ContactGithubLink: 
+Can you provide the link to your github profile?
+
+ContactEmailAddress:
+What is your email address associated with your githbub profile
 
 ---
 
 # ${projectTitle}
 
 ## Description
-${projectDescription}
+${projectDescription}  
 [project link](https://bookdown.org/yihui/rmarkdown-cookbook/attr-output.html)
 
 ## Table Of Contents
-[Installation](#user-content-installation)
-[Usage](#user-content-usage)
-[Credits](#user-content-credits)
-[Licenses](#user-content-licenses)
-[Tests](#user-content-tests)
-[Questions](#user-content-questions)
+* [Installation](#user-content-installation)
+* [Usage](#user-content-usage)
+* [Credits](#user-content-credits)
+* [Licenses](#user-content-licenses)
+* [Tests](#user-content-tests)
+* [Questions](#user-content-questions)
 
 ## Installation
 1. ${ installationSteps[0]}
@@ -48,20 +63,18 @@ ${projectDescription}
 ${usageInstructions}
 
 ## License
-1. ${license[0]}
-2. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+* ${license[0]}
+* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributing
-1. ${contributing[0]}
-2. ${contributing[1]}
-3. ${contributing[2]}
+${contributing}
 
 ## Tests
 ${test}
 
 ## Questions
-${ContactGithubUsername}
-[Github Link](${ContactGithubLink})  
+
+[${ContactGithubUsername}](${ContactGithubLink})  
 <fake@example.com> ${ContactEmailAddress}
 
 
