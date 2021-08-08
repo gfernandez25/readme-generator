@@ -6,8 +6,12 @@ projectLink: Please enter a link for the deployed project
 
 tableOfContents: (will be auto generated from sections, just for navigation)
 
-installationSteps: What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running
+Provide a step-by-step description of how to get the development environment running
 
+installationSteps: Please provide installation step.
+
+moreInstallationSteps: Do you have more installation steps?
+ 
 usageInstructions: Provide instructions and examples for use. Include screenshots as needed.
 
 license: choose a license for the application from the list of options below
@@ -22,7 +26,7 @@ ContactGithubUsername: please enter Github Username
 ContactGithubLink: please enter github link
 ContactEmailAddress: please enter email address for users to contact you with questions
 
-================================================================================================
+---
 
 #${projectTitle}
 
@@ -33,20 +37,18 @@ ${projectDescription}
 ##Table Of Contents
 
 [Installation](#user-content-installation)
-Usage
-Credits
-Licenses
-Tests
-Questions
+[Usage](#user-content-usage)
+[Credits](#user-content-credits)
+[Licenses](#user-content-licenses)
+[Tests](#user-content-tests)
+[Questions](#user-content-questions)
 
+##Installation
 
+1. ${ installationSteps[0]}
+2. ${ installationSteps[1]}
+3. ${ installationSteps[2]}
 
-
-${installationSteps}
-step 1
-step 2
-step 3
-step 4
 
 ##Usage
 
@@ -54,32 +56,27 @@ ${usageInstructions}
 
 ##License
 
-${license}
-license 1
-license 2
+1. ${license[0]}
+2. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ##Contributing
 
-${contributing}
-step - 1
-step - 2
+1. ${contributing[0]}
+2. ${contributing[1]}
+3. ${contributing[2]}
+
 
 ##Tests
 
 ${test}
-step - 1
-step - 2
+
 
 ##Questions
 
 ${ContactGithubUsername}
-${ContactGithubLink}
+[Github Link](${ContactGithubLink})  
+<fake@example.com>
+
 ${ContactEmailAddress}
 
-
-
-## Installation
-this is it 
-
-
-## The Header (name="installation")
