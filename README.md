@@ -49,7 +49,6 @@ ${projectDescription}
 ## Table Of Contents
 * [Installation](#user-content-installation)
 * [Usage](#user-content-usage)
-* [Credits](#user-content-credits)
 * [Licenses](#user-content-licenses)
 * [Tests](#user-content-tests)
 * [Questions](#user-content-questions)
