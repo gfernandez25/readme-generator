@@ -1,50 +1,8 @@
-projectTitle: 
-What's the project name?
-
-projectDescription: 
-Whats the project about?
-
-projectLink: 
-What is the link for the project?
-
-Provide a step-by-step description of how to get the development environment running
-
-installationSteps[]: 
-What is the description for step ${stepNumber}?
-additionalSteps: 
-Do you have more installation steps?
-
-usageInstructions: 
-Can you provide instructions and examples for use?
-
-license[]: 
-What licenses are you using for your project? (Select any that apply) 
-
-contributing: 
-Could you add guidelines on how to contribute to your project?
-
-tests: 
-Could you add guidelines on how to test your project?
-
-
-In order for users to contact you with questions about your application we are going to need some information.
-
-ContactGithubUsername: 
-What is your Github Username?
-
-ContactGithubLink: 
-Can you provide the link to your github profile?
-
-ContactEmailAddress:
-What is your email address associated with your githbub profile
-
----
-
-# ${projectTitle}
+# ${title}
 
 ## Description
-${projectDescription}  
-[project link](https://bookdown.org/yihui/rmarkdown-cookbook/attr-output.html)
+${description}  
+[project link](${link})
 
 ## Table Of Contents
 * [Installation](#user-content-installation)
@@ -64,6 +22,8 @@ ${usageInstructions}
 ## License
 * ${license[0]}
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+* [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)]
 
 ## Contributing
 ${contributing}
