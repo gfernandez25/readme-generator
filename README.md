@@ -1,8 +1,8 @@
-# ${title}
+# readme project
 
 ## Description
-${description}  
-[project link](${link})
+creates a readme file  
+[project link](https://github.com/gfernandez25/readme-generator)
 
 ## Table Of Contents
 * [Installation](#user-content-installation)
@@ -12,29 +12,24 @@ ${description}
 * [Questions](#user-content-questions)
 
 ## Installation
-1. ${ installationSteps[0]}
-2. ${ installationSteps[1]}
-3. ${ installationSteps[2]}
+1. step 1
+2. step 2
+3. step 3
 
 ## Usage
-${usageInstructions}
+instructions and examples
 
 ## License
-* ${license[0]}
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 * [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)]
 
 ## Contributing
-${contributing}
+contribute however you can
 
 ## Tests
-${test}
+manual test only
 
 ## Questions
-
-[${ContactGithubUsername}](${ContactGithubLink})  
-<fake@example.com> ${ContactEmailAddress}
-
-
-
+for any questions see info below
+[gfernandez25](https://github.com/gfernandez25)  
+<gfern25@yahoo.com>
