@@ -23,7 +23,7 @@ init();
 // TODO: Create a function to initialize app
 async function init() {
     const {generateMarkdown} = markdownService;
-    const {questionsSet, generateQuestionsSet} = questionsService;
+    const {questionsSet, generateQuestionsSet, generateInstructionSteps} = questionsService;
     const {
         title,
         description,
@@ -32,15 +32,9 @@ async function init() {
         license,
         contributing,
         tests,
-
-        installationSteps,
-        moreStepsConfirmation,
-
         contactGithubUsername,
         contactGithubLink,
         contactEmailAddress,
-
-        generateFile,
     } = questionsSet;
 
     const answers = {
@@ -53,18 +47,12 @@ async function init() {
             contributing,
             tests,
         ]),
-        // installationQuestions: await generateQuestionsSet([
-        //     installationSteps,
-        //     moreStepsConfirmation
-        // ], 'Provide a step-by-step description of how to get the development environment running.'),
+        installationQuestions: await generateInstructionSteps(),
         contactQuestions: await generateQuestionsSet([
             contactGithubUsername,
             contactGithubLink,
             contactEmailAddress,
         ], '\n In order for users to contact you with questions about your application we are going to need some information'),
-        // generateFile: await generateQuestionsSet([
-        //     generateFile,
-        // ], '\n')
     }
 
     const fileData = generateMarkdown(answers);

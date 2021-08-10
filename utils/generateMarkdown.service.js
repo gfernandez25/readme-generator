@@ -30,7 +30,7 @@ function renderInstallationSteps(steps) {
 
     for (let i = 0; i < steps.length; i++) {
         installationString += `
-${i+1}. ${steps[i]}`
+${i+1}. ${steps[i].installationSteps}`
     }
 
     return installationString + '\n';
@@ -105,11 +105,7 @@ generateMarkdown = function (answers) {
         renderTitle(title) +
         renderDescription(description, link) +
         renderTOC() +
-        renderInstallationSteps([
-            'step 1',
-            'step 2',
-            'step 3',
-        ]) +
+        renderInstallationSteps(installationQuestions) +
         renderUsage(usageInstructions) +
         renderLicense(license) +
         renderContributing(contributing) +
