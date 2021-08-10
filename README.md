@@ -1,7 +1,7 @@
 # readme project
 
 ## Description
-creates a readme file  
+generate readme file  
 [project link](https://github.com/gfernandez25/readme-generator)
 
 ## Table Of Contents
@@ -21,7 +21,7 @@ instructions and examples
 
 ## License
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-* [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)]
+* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Contributing
 contribute however you can
@@ -30,6 +30,5 @@ contribute however you can
 manual test only
 
 ## Questions
-for any questions see info below
-[gfernandez25](https://github.com/gfernandez25)  
-<gfern25@yahoo.com>
+for any questions please send me and email to <gfern25@yahoo.com> or check out my GitHub profile: [fernandez25](https://github.com/gfernandez25)  
+
