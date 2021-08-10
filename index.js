@@ -1,26 +1,11 @@
-// TODO: Include packages needed for this application
 
 const questionsService = require('./utils/questions.service');
 const markdownService = require('./utils/generateMarkdown.service');
 const fileService = require('./utils/file.service')
 
-// TODO: Create an array of questions for user input
-/*  -title of my project
-    -Description,
-    -Table of Contents,
-    -Installation,
-    -Usage,
-    -License,
-    -Contributing,
-    -Tests, and
-    -Questions
-     -github username - this is added to the section of the README entitled Questions, with a link to my GitHub profile
-     -email address -this is added to the section of the README entitled Questions, with instructions on how to reach me with additional question
-    */
 
 init();
 
-// TODO: Create a function to initialize app
 async function init() {
     const {generateMarkdown} = markdownService;
     const {questionsSet, generateQuestionsSet, generateInstructionSteps} = questionsService;
@@ -65,7 +50,6 @@ async function init() {
 
 
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 }
 
