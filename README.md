@@ -20,7 +20,7 @@ this project collects information about another project and generates a readme f
 3. run index.js
 
 ## Usage
-
+[video on how to use program](https://drive.google.com/file/d/1K8jV-SVKRwOrIejnbsUYZ4ax0jRNAVao/view)
 
 ## License
  
