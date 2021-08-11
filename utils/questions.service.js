@@ -4,6 +4,14 @@ const title = {
     type: 'input',
     name: 'title',
     message: 'What is the name of your project?',
+    validate: titleInput => {
+        if (titleInput) {
+            return true;
+        } else {
+            console.log('Please enter the name of your project!');
+            return false;
+        }
+    }
 };
 
 const description = {
@@ -35,7 +43,7 @@ const moreStepsConfirmation = {
 const usageInstructions = {
     type: 'input',
     name: 'usageInstructions',
-    message: 'Can you provide instructions and examples for use?',
+    message: 'Could you provide instructions or examples on how to use?',
 };
 
 const license = {
@@ -90,6 +98,7 @@ const generateQuestionsSet = function (questions, message = undefined) {
 }
 
 const generateInstructionSteps = async function () {
+    console.log('Please provide step by step instructions on how to install your project')
     const answers = [];
     let qSet;
     let n = true;
