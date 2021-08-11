@@ -43,9 +43,8 @@ ${usageInstructions}
 `
 }
 
-function renderLicense(licenses) {
-    let licenseString = `
-## License`;
+function renderLicenseBadge(licenses) {
+    let licenseString = ``;
 
     if (!!licenses.length) {
         for (let i = 0; i < licenses.length; i++) {
@@ -62,6 +61,37 @@ function renderLicense(licenses) {
                 case 'ISC':
                     licenseString += `
 * [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
+                    break;
+            }
+        }
+    } else {
+        licenseString += `
+unlicensed`;
+    }
+
+    return licenseString;
+}
+
+function renderLicense(licenses) {
+    let licenseString = `
+## License
+`;
+
+    if (!!licenses.length) {
+        for (let i = 0; i < licenses.length; i++) {
+
+            switch (licenses[i]) {
+                case 'MIT':
+                    licenseString += ` 
+* Covered by MIT license `
+                    break;
+                case 'GPL':
+                    licenseString += `
+* Covered by GPL license `
+                    break;
+                case 'ISC':
+                    licenseString += `
+* Covered by ISC license `
                     break;
             }
         }
@@ -97,12 +127,14 @@ for any questions please send me and email to <${email}> or check out my GitHub 
 }
 
 generateMarkdown = function (answers) {
-    const {projectQuestions, installationQuestions, contactQuestions} = answers;
-    const {title, description, link, usageInstructions, license, contributing, tests } = projectQuestions;
+    const {projectQuestionsSetOne, projectQuestionsSetTwo,  installationQuestions, contactQuestions} = answers;
+    const {title, description, link, } = projectQuestionsSetOne;
+    const {usageInstructions, license, contributing, tests } = projectQuestionsSetTwo;
     const {contactGithubUsername, contactGithubLink, contactEmailAddress} = contactQuestions;
 
     return "" +
         renderTitle(title) +
+        renderLicenseBadge(license) +
         renderDescription(description, link) +
         renderTOC() +
         renderInstallationSteps(installationQuestions) +
