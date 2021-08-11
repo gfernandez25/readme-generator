@@ -23,16 +23,18 @@ async function init() {
     } = questionsSet;
 
     const answers = {
-        projectQuestions: await generateQuestionsSet([
+        projectQuestionsSetOne: await generateQuestionsSet([
             title,
             description,
             link,
+        ]),
+        installationQuestions: await generateInstructionSteps(),
+        projectQuestionsSetTwo: await generateQuestionsSet([
             usageInstructions,
             license,
             contributing,
             tests,
         ]),
-        installationQuestions: await generateInstructionSteps(),
         contactQuestions: await generateQuestionsSet([
             contactGithubUsername,
             contactGithubLink,
@@ -43,11 +45,6 @@ async function init() {
     const fileData = generateMarkdown(answers);
     fileService.write(fileData);
 }
-
-
-
-
-
 
 
 function writeToFile(fileName, data) {
